@@ -4,7 +4,7 @@ def countDigits(n: int) -> int:
     while(num > 0):
         digit = num % 10
         num = int(num/10)
-        if(n%digit == 0):
+        if(digit != 0 and n%digit == 0):
             count = count + 1  
     print(count)
     pass
